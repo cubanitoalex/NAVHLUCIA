@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Globo terráqueo -->
+    <path
+        android:fillColor="@color/purple_500"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8z"/>
+    
+    <!-- Meridianos y paralelos -->
+    <path
+        android:strokeColor="@color/purple_500"
+        android:strokeWidth="1"
+        android:pathData="M12,4v16M4,12h16M6,6c3.31,-3.31 8.69,-3.31 12,0M6,18c3.31,3.31 8.69,3.31 12,0"/>
+    
+    <!-- Señales WiFi -->
+    <path
+        android:fillColor="@color/purple_700"
+        android:pathData="M12,6c3.31,0 6,2.69 6,6s-2.69,6 -6,6 -6,-2.69 -6,-6S8.69,6 12,6zM12,9c1.66,0 3,1.34 3,3s-1.34,3 -3,3 -3,-1.34 -3,-3S10.34,9 12,9z"/>
+    
+    <!-- Punto central -->
+    <path
+        android:fillColor="@color/purple_700"
+        android:pathData="M12,11m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+</vector> 

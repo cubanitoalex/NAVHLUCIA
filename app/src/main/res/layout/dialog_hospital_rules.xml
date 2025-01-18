@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/purple_500"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Recordatorio Importante"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:text="Al acceder a Internet, usted se compromete a:\n\n• Usar el servicio solo con fines profesionales y académicos\n\n• No acceder a sitios inapropiados o no autorizados\n\n• No descargar contenido que viole las políticas del hospital\n\n• Respetar el ancho de banda y tiempo de uso\n\n• Mantener la confidencialidad de sus credenciales\n\n El incumplimiento de estas normas puede resultar en la suspensión del servicio."/>
+
+</LinearLayout> 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppUpdater>
+    <update>
+        <latestVersion>1.0.1</latestVersion>
+        <latestVersionCode>2</latestVersionCode>
+        <releaseNotes>
+- Mejoras en la interfaz de usuario
+- Corrección de errores
+- Nuevo botón de búsqueda en Google
+        </releaseNotes>
+        <url>https://github.com/tu-usuario/NAVHLUCIA/releases/download/v1.0.1/app-release.apk</url>
+    </update>
+</AppUpdater> 

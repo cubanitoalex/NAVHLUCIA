@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_back"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Atrás"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_sites"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Sitios"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_downloads"
+        android:icon="@drawable/ic_downloads"
+        android:title="Descargas"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Refrescar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Configurar Proxy"
+        app:showAsAction="always"/>
+</menu> 

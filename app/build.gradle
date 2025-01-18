@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'cu.holalinux.navhlucia'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "cu.holalinux.navhlucia"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("navhlucia.keystore")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: project.properties['KEYSTORE_PASSWORD']
+            keyAlias System.getenv("KEY_ALIAS") ?: project.properties['KEY_ALIAS']
+            keyPassword System.getenv("KEY_PASSWORD") ?: project.properties['KEY_PASSWORD']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            signingConfig signingConfigs.release
+            
+            // Configurar el nombre del archivo de salida
+            setProperty("archivesBaseName", "NAVHLUCIA-${defaultConfig.versionName}")
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core:1.12.0'
+            force 'androidx.core:core-ktx:1.12.0'
+            // Excluir las dependencias antiguas de support
+            exclude group: 'com.android.support'
+            exclude module: 'support-v4'
+            exclude module: 'support-annotations'
+            exclude module: 'support-compat'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.webkit:webkit:1.6.1'
+    implementation 'com.github.amitshekhariitbhu:PRDownloader:1.0.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.biometric:biometric:1.2.0-alpha05'
+    
+    // AppUpdater con exclusiones
+    implementation('com.github.javiersantos:AppUpdater:2.7') {
+        exclude group: 'com.android.support'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+    }
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

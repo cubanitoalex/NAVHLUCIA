@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Círculo de fondo -->
+    <path
+        android:fillColor="@color/purple_100"
+        android:pathData="M12,12m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0"/>
+    
+    <!-- Cruz del hospital -->
+    <path
+        android:fillColor="@color/purple_500"
+        android:pathData="M15,9h-2V7c0,-0.55 -0.45,-1 -1,-1h0c-0.55,0 -1,0.45 -1,1v2H9c-0.55,0 -1,0.45 -1,1v0c0,0.55 0.45,1 1,1h2v2c0,0.55 0.45,1 1,1h0c0.55,0 1,-0.45 1,-1v-2h2c0.55,0 1,-0.45 1,-1v0C16,9.45 15.55,9 15,9"/>
+    
+    <!-- Líneas de conectividad -->
+    <path
+        android:strokeColor="@color/purple_700"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M12,4 C16.97,4 21,8.03 21,13"/>
+    <path
+        android:strokeColor="@color/purple_700"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M12,7 C15.31,7 18,9.69 18,13"/>
+    <path
+        android:strokeColor="@color/purple_700"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M12,10 C13.66,10 15,11.34 15,13"/>
+</vector> 
