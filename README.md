@@ -5,13 +5,16 @@ Navegador web personalizado para el Hospital Lucia Iñiguez.
 ## Capturas de pantalla
 
 ### Configuración del Proxy
-![Configuración del Proxy](Screenshot/proxy_config.jpg)
+![Configuración del Proxy](./Screenshot/Screenshot_01_NAVHLUCIA.jpg)
 
 ### Pantalla Principal
-![Pantalla Principal](Screenshot/main_screen.jpg)
+![Pantalla Principal](./Screenshot/Screenshot_02_NAVHLUCIA.jpg)
 
 ### Gestión de Descargas
-![Gestor de Descargas](Screenshot/downloads.jpg)
+![Gestor de Descargas](./Screenshot/Screenshot_03_NAVHLUCIA.jpg)
+
+### Configuración Avanzada
+![Configuración Avanzada](./Screenshot/Screenshot_04_NAVHLUCIA.jpg)
 
 ## Características
 
